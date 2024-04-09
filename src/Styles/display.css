@@ -1,0 +1,21 @@
+.displayCheck{
+    animation-name: slide;
+    animation-duration: 2s;
+    transform: translateX(-10rem);
+    animation-fill-mode: forwards;
+    animation-timeline: view();
+}
+
+
+
+@keyframes slide {
+    0%{opacity: 0}
+    20%{opacity: 1; }
+    50%{opacity: 1;transform: translateX(0);}
+    100%{opacity: 1;transform: translateX(0);}
+}
+
+#chh{
+    height: auto;
+    transition: 2s;
+}

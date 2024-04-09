@@ -1,0 +1,16 @@
+.check{
+    animation-name: fadeIn  ;
+    animation-timing-function: ease-in;
+    transform: translateY(70px);
+    animation-duration: 2s;
+    animation-delay: 1ms;
+    animation-fill-mode: forwards;
+    animation-timeline: view();
+}
+
+@keyframes fadeIn {
+    0%{opacity: 0}
+    10%{opacity: .5}
+    50%{opacity: 1; transform: translateY(0);}
+    100%{opacity: 1; transform: translateY(0);}
+}

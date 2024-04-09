@@ -1,0 +1,143 @@
+.nav-cont {
+    background-color: #F8F7F2;
+    box-shadow: 5px 0 10px rgb(0, 0, 0, 0.5);
+    font-weight: 600;
+    margin-bottom: .4em;
+
+}
+
+.menu-item ::after {
+    content: "This is the pseudo-element content";
+    display: block;
+    /* Makes the pseudo-element a block-level element */
+    color: #007bff;
+    /* Text color */
+    font-weight: bold;
+    /* margin-top: 10px; */
+}
+
+.nav-items {
+    animation: navAnime .5s;
+    animation-timeline: view();
+    animation-fill-mode: both;
+}
+
+/* .nav-box{
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+} */
+
+@keyframes navAnime {
+    0% {
+        width: 90%;
+        ;
+    }
+
+    22% {
+        width: 35%;
+    }
+
+    100% {
+        width: 35%;
+    }
+}
+
+.nav-list li {
+    list-style-type: none;
+    margin-right: 1em;
+}
+
+.nav-list li:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.search-btn {
+    width: 165px;
+    height: 40px;
+    background-color: #8A60F6;
+    border: none;
+    color: white;
+    border-radius: 56px;
+    position: relative;
+    font-weight: 600;
+    font-size: normal;
+}
+
+.search-btn p {
+    width: 1.5em;
+    /* color: red; */
+    position: absolute;
+    left: 5%;
+    top: 50%;
+    transform: translate(0, -50%);
+    font-size: large;
+
+}
+
+.login-btn {
+    width: 5em;
+    height: 40px;
+    border-radius: 1em;
+    background-color: #F8F7F2;
+    border: 1px solid grey;
+    /* box-shadow: 0 3px 5px 0 rgb(0, 0, 0, 0.3); */
+}
+
+.login-btn:hover {
+    cursor: pointer;
+    border: 1.5px solid black;
+}
+
+.sign-btn:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, .8);
+}
+
+.sign-btn {
+    width: 5rem;
+    height: 40px;
+    border-radius: 1em;
+    border: none;
+    background-color: black;
+    color: white;
+
+}
+
+@media (max-width: 768px) {
+    .nav-cont {
+        width: 100%;
+    }
+
+    .nav-box {
+        justify-content: flex-end;
+    }
+
+    .nav-box .nav-items {
+        display: none
+    }
+
+    .nav-box ul .search-btn {
+        width: 3rem;
+        padding: 0;
+        position: relative;
+
+    }
+
+    .nav-box ul .search-btn p {
+        position: absolute;
+        /* color: aqua; */
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -130%)
+            /* top: 10%; */
+    }
+
+    .nav-box ul .search-btn span {
+        display: none;
+
+    }
+
+    /* Add more responsive styles as needed */
+}

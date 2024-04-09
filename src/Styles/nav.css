@@ -1,0 +1,40 @@
+.navanime {
+    animation-name: sizeanime;
+    animation-timing-function: ease-out;
+
+    animation-timeline: view();
+}
+
+@keyframes sizeanime {
+    0% {
+        width: 30%;
+    }
+
+    13% {
+        width: 30%;
+    }
+
+    /* 13.1%{width: 23%;} */
+    18% {
+        width: 23%;
+    }
+
+    100% {
+        width: 23%;
+    }
+}
+
+
+
+/* .checkk::backdrop {
+    content: '';
+    position: absolute;
+    background-color: red;
+    top: 2rem;
+    left: 0;
+    width: 200px;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 10px
+} */

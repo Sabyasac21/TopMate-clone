@@ -1,0 +1,270 @@
+.animate {
+    animation-name: fadeIn;
+    transform: translateY(40px);
+    animation-fill-mode: forwards;
+    animation-duration: 2s;
+
+
+}
+
+#btn-anime {
+    /* opacity: 0; */
+    animation-name: introFade;
+    animation-duration: 1s;
+    animation-timeline: view();
+}
+
+.review-section {
+    animation: introFade 2s ease-in;
+    animation-timeline: view();
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes introFade {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    20% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    30% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    100% {
+        opacity: 1;
+    }
+
+}
+
+
+
+
+.cont {
+    position: relative;
+    /* box-shadow: 0 10px 10px 0 rgb(171, 133, 133); */
+    border-radius: 5rem;
+    /* overflow-x: hidden; */
+    
+}
+
+.pic {
+    border-top-left-radius: 5rem;
+    opacity: 0;
+
+    position: absolute;
+    left: 100%;
+    animation-timing-function: ease-in-out;
+    animation-name: anime;
+    animation-duration: 18s;
+    animation-iteration-count: infinite;
+}
+
+.cont>*:nth-child(1) {
+    animation-delay: 0s;
+    
+    
+}
+
+.cont>*:nth-child(2) {
+    animation-delay: 6s;
+}
+
+.cont>*:nth-child(3) {
+    animation-delay: 12s;
+}
+
+
+@keyframes anime {
+    0% {left: 100%}
+  4% {left: 0%; opacity: 1;}
+  33.33% {left: 0%; opacity: 1;}
+  37.33% {left: -1%; opacity: 0;}
+  100% {left: -1%}
+}
+
+.categories {
+    width: 100%;
+    /* margin-top: 2rem; */
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.heading h1 {
+    font-size: 3.5em;
+    padding-top: 1em;
+    font-weight: 900;
+}
+
+
+
+.category-list {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    list-style-type: none;
+    overflow-x: auto;
+}
+
+.category-list::-webkit-scrollbar {
+    display: none;
+}
+
+.category-list li {
+    margin-right: 1em;
+    padding: 1rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    border-radius: 2em;
+    background-color: white;
+    flex-shrink: 0;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.category-list li:hover {
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}
+
+.people {
+    margin-bottom: 1em;
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 1rem 1rem; */
+}
+
+.people span {
+    height: 85%;
+    width: 30%;
+    position: relative;
+    border-radius: 1em;
+    border-top-right-radius: 0;
+    background-color: #F8F7F2;
+    margin-left: 1em;
+    padding: 1rem;
+}
+
+.people span:nth-child(3) .profile-intro {
+    left: 30%;
+}
+
+.people span:nth-child(3) {
+    margin-right: 1rem;
+}
+
+.people span .bg-img {
+    width: 100%;
+    height: 50%;
+    opacity: 0.5;
+    border-top-left-radius: 1rem;
+}
+
+.dp {
+    height: 40%;
+    width: 50%;
+    border-radius: 50%;
+    position: absolute;
+    top: 20%;
+    left: 25%;
+}
+
+.dp-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    opacity: 1;
+}
+
+.profile-intro {
+    position: absolute;
+    top: 65%;
+    left: 25%;
+    line-height: 1em;
+}
+
+@media (max-width: 768px) {
+    .main-cont {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main-cont div {
+        margin: 1rem 0;
+        width: 90%;
+    }
+
+    .action {
+        /* display: flex; */
+        flex-direction: column;
+        width: 100%;
+
+    }
+
+    .action button {
+        width: 100%;
+        margin: 0;
+        margin: .1em 0;
+    }
+
+    .display-img {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .display-img img {
+        width: 50%;
+
+    }
+
+    .category-list {
+        justify-content: flex-start;
+    }
+
+    .heading h1 {
+        font-size: 2.5em;
+        font-weight: 700;
+    }
+
+    .people span:nth-child(3) {
+        display: none;
+    }
+
+    .people span:nth-child(2) {
+        margin-right: 1rem;
+    }
+
+    .people span {
+        width: 50%;
+        height: 70%;
+
+    }
+
+    .people span .profile-intro {
+        left: 5%;
+    }
+
+
+
+}
