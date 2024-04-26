@@ -53,16 +53,16 @@ function Info() {
   };
   return (
     <div className="bg-[#fefce4]">
-      <div className="md:flex py-24">
-        <div className="w-1/2">
-          <h1 className="font-bold text-6xl p-8 text-left" style={{lineHeight:'1.2'}}>Frequently asked questions</h1>
-          <p className="text-xl text-left px-8">Can't find the answer you are looking for?</p>
-          <p className="text-xl  font-bold text-left p-8 text-green-700">Reach out to us</p>
+      <div className="md:flex py-10 md:py-20">
+        <div className="md:w-1/2 ">
+          <h1 className="font-bold text-4xl md:text-6xl px-4 md:px-8 py-8 text-left " style={{lineHeight:'1.2'}}>Frequently asked questions</h1>
+          <p className="text-lg text-left px-4 md:px-8">Can't find the answer you are looking for?</p>
+          <p className="text-xl  font-bold text-left px-4 md:px-8 py-2 text-green-700">Reach out to us</p>
         </div>
-        <div className="w-1/2 px-12">
-          <div className="w-full p-4 border-b">
+        <div className="md:w-1/2 px-4 py-4 md:px-12">
+          <div className="w-full py-6  border-b ">
             <div
-              className="flex relative  p-4"
+              className="flex relative  p-4 "
               onClick={() => handleDivClick(1)}
             >
               <h3
@@ -102,7 +102,7 @@ function Info() {
               </p>
             </div>
           </div>
-          <div className="p-4 border-b">
+          <div className="py-4 border-b">
             <div
               className="flex relative  p-4"
               onClick={() => handleDivClick(2)}
@@ -140,7 +140,7 @@ function Info() {
               </p>
             </div>
           </div>
-          <div className="p-4 border-b">
+          <div className="py-4 border-b">
             <div
               className="flex relative  p-4"
               onClick={() => handleDivClick(3)}
@@ -179,7 +179,7 @@ function Info() {
               </p>
             </div>
           </div>
-          <div className="p-4 border-b">
+          <div className="py-4 border-b">
             <div
               className="flex relative  p-4"
               onClick={() => handleDivClick(4)}
@@ -218,7 +218,7 @@ function Info() {
               </p>
             </div>
           </div>
-          <div className="p-4 border-b">
+          <div className="py-4 border-b">
             <div
               className="flex relative  p-4"
               onClick={() => handleDivClick(5)}

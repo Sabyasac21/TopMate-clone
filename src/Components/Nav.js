@@ -4,6 +4,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
+import SmallLogo from '../Components/SoftwareEng/Images/smallLogo.png'
 // import Logo from './SoftwareEng/Images/Logo.jpeg';
 
 function Nav({scrollTarget}) {
@@ -30,9 +31,10 @@ function Nav({scrollTarget}) {
           <div className="w-[30%] navanime ">
             <Link to="/">
               <img
-                className="w-full"
+                className="md:w-full hidden md:block"
                 src="https://topmate.io/_next/image?url=%2Fimages%2Fcommon%2Ftopmate-light.svg&w=256&q=75"
               />
+              <img className="md:hidden" src={SmallLogo}/>
             </Link>
           </div>
           <div className="flex justify-around w-[70%] ">
