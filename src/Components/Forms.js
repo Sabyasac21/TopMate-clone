@@ -7,20 +7,20 @@ function Forms({setScrollTarget}) {
   }, [])
   return (
     <div id="scroll-target" className="flex flex-col items-center justify-center h-40vh bg-gray-900 text-white">
-      <h1 className="text-6xl mt-12 mb-4">
+      <h1 className="text-5xl md:text-6xl mt-12 mb-4">
         Find the <b>right expert</b>
       </h1>
-      <p className="mb-8 text-xl">
+      <p className="mb-8 text-xl md:block hidden">
         Get personalized adivice from top experts to your specific questions
       </p>
 
-      <div  className="relative w-4/5">
+      <div  className="relative w-4/5 flex justify-center">
         <input
           type="text"
           placeholder="Search..."
           className=" w-full text-black py-6 px-8 m-4 border border-gray-300 rounded-full focus:outline-none focus:ring focus:border-blue-300 text-md flex-shrink-0"
         />
-        <button className="absolute right-0 top-1/2 transform -translate-y-1/2 py-3 px-8 border border-gray-300 bg-purple-700 hover:text-black rounded-full focus:outline-none focus:ring focus:border-blue-300 text-xl transition duration-300 ease-in-out font-bold mb-2">
+        <button className="absolute right-4 top-1/2 transform -translate-y-1/2 py-3 px-8 border border-gray-300 bg-purple-700 hover:text-black rounded-full focus:outline-none focus:ring focus:border-blue-300 text-xl transition duration-300 ease-in-out font-bold mb-2">
           Search
         </button>
       </div>
