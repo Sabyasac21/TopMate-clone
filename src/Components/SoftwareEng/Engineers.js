@@ -6,7 +6,7 @@ function Engineers() {
     <div className='min-h-[0vh] p-4 py-8 bg-[#faf7f2]'>
         <div className='flex flex-col md:flex-row gap-8  md:m-4 text-left'>
             <div className='w-full md:w-3/5  md:p-8 '>
-                <h1 className='font-medium md:font-bold text-3xl md:text-5xl ' style={{lineHeight:'1.3'}}>Share and monetise your expertise as a Software Engineer</h1>
+                <h1 className='font-bold text-4xl ' style={{lineHeight:'1.3'}}>Share and monetise your expertise as a Software Engineer</h1>
                 <p className='font-medium text-xl mt-12'>Conduct 1:1s. Host a coding webinar. Sell your interview guide. It's all possible with Topmate!</p>
                 <button className='font-bold text-xl mt-12 bg-black rounded-lg text-white p-4 w-full md:w-3/5'>Sign Up Free</button>
 

@@ -31,7 +31,7 @@ function App() {
                 <Nav scrollTarget={scrollTarget}/>
                 <IntroComp/>
                 <Forms setScrollTarget={setScrollTarget}/>
-                <Display />
+                {/* <Display /> */}
                 <Review />
                 <Info/>
                 <Footer />

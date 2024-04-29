@@ -17,6 +17,10 @@ function Nav({ scrollTarget }) {
     setHamVisible(!hamVisible);
     
   }
+
+  function handleFinal(){
+    setHamVisible(false)
+  }
  
 
   const handleDropdown = () => {
@@ -36,7 +40,7 @@ function Nav({ scrollTarget }) {
   };
 
   return (
-    <div className="md:h-[12vh] sticky z-50 top-0  bg-red-100 ">
+    <div className="md:h-[12vh] sticky z-50 top-0  bg-red-100 shadow-lg">
       <div className="relative w-full flex justify-center">
         <div className="w-[90%] py-4 h-full flex">
           <div className=" md:w-[50%] flex items-center">
@@ -96,8 +100,8 @@ function Nav({ scrollTarget }) {
             <div className="md:w-[70%] flex justify-between">
               <div onClick={handleScrollClick}>
                 <Link to="/#ai-search">
-                  <button className="w-full  justify-between items-center  whitespace-nowrap flex px-1  md:px-8 py-[8px] text-white bg-[#8a60f6] font-bold rounded-full mr-4">
-                    <div className=" h-full w-full  ">
+                  <button className="w-full  justify-between items-center  whitespace-nowrap flex px-1  md:px-4 py-[8px] text-white bg-[#8a60f6] font-bold rounded-full mr-4">
+                    <div className="h-full w-full md:h-auto md:w-auto ">
                       <FontAwesomeIcon
                         className=" font-extrabold text-md"
                         icon={faSearch}
@@ -144,7 +148,7 @@ function Nav({ scrollTarget }) {
 
             <div className={`absolute ${creatorsList?'block':'hidden'} p-2 my-2 shadow-lg  border rounded-xl top-full right-0 w-full bg-white`}>
               <div className="text-2xl  flex flex-col p-4">
-                <Link to='/for/engineers'><span className="p-2">Software Engineers</span></Link>
+                <Link to='/for/engineers'><span onClick={handleFinal} className="p-2">Software Engineers</span></Link>
                 <span className="p-2">Designers </span>
                 <span className="p-2">Product Engineers</span>
               </div>

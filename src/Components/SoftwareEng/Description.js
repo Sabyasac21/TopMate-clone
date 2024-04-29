@@ -5,10 +5,10 @@ function Description() {
     <div className="bg-white py-24">
       <div className="mx-8">
         <div className="mb-20">
-          <h1 className="font-bold text-5xl">What all you can do?</h1>
+          <h1 className="font-bold text-5xl md:text-5xl">What all you can do?</h1>
         </div>
-        <div className="flex gap-6">
-          <div className="w-1/3 border rounded-3xl">
+        <div className="flex flex-col md:flex-row gap-6">
+          <div className="md:w-1/3 border rounded-3xl">
             <img
               className="w-full"
               src="https://topmate.io/_next/image?url=%2Fimages%2Fcategory-page%2Fimg-category-card-bg-1.svg&w=384&q=75"
@@ -24,7 +24,7 @@ function Description() {
               <h3 className="font-bold text-xl">Conduct 1:1s</h3>
             </div>
           </div>
-          <div className="w-1/3 border rounded-3xl">
+          <div className="md:w-1/3 border rounded-3xl">
             <img
               className="w-full"
               src="https://topmate.io/_next/image?url=%2Fimages%2Fcategory-page%2Fimg-category-card-bg-2.svg&w=384&q=75"
@@ -39,7 +39,7 @@ function Description() {
               <h3 className="font-bold text-xl">Host a webinar</h3>
             </div>
           </div>
-          <div className="w-1/3 border rounded-3xl">
+          <div className="md:w-1/3 border rounded-3xl">
             <img
               className="w-full"
               src="https://topmate.io/_next/image?url=%2Fimages%2Fcategory-page%2Fimg-category-card-bg-3.svg&w=384&q=75"

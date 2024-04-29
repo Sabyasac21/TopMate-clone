@@ -88,13 +88,13 @@ function Display() {
               </div>
 
               <div
-                className={`flex justify-center items-center h-${
-                  div1Visible ? "20" : "0"
+                className={`flex justify-center items-center opacity-${
+                  div1Visible ? 0 : 0
                 } transition-all duration-300 ease-in-out `}
               >
                 <p
                   className={`w-4/5 mt-4 ml-4 opacity-${
-                    div1Visible ? 1 : 0
+                    div1Visible ? 0 : 0
                   } transition-all duration-300 ease-in-out `}
                 >
                   Membership session, consultations, discovery calls-do what you

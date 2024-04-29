@@ -37,7 +37,7 @@ function IntroComp() {
               />
             </div>
             <div className="animate relative w-auto my-8">
-              <h1 className="font-bold text-6xl md:text-8xl my-8">
+              <h1 className="font-bold text-5xl md:text-8xl my-8">
                 <span className="font-normal">Start your</span>
                 <br /> side hustle today
               </h1>
